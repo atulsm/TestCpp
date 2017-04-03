@@ -1,25 +1,33 @@
 #include <iostream>
+#include "Substact.h"
+
 using namespace std;
 
 //this function is defined in Add.cpp
 int add(int x, int y);
 
-int return5()
-{
-    return 5;
-}
+//This function is defined in the same file
+int method();
+
 
 int main()
 {
-	cout << "Hello world!" << std::endl;
+	cout << "Hello world!" << endl;
 
-	std::cout << return5 << std::endl;
+	cout << method << endl;
 
-	int x; //uninitialized
+	//int x; //uninitialized
 	//cout << x;
 
 	cout << add(1,2);
 
-	_sleep(2000);
+	cout << substract(2,1);
+
+	//_sleep(2000);
 	return 0;
+}
+
+int method()
+{
+    return 1;
 }
