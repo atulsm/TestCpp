@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void returnNothing();
+//this function is defined in Add.cpp
+int add(int x, int y);
 
 int return5()
 {
@@ -15,16 +16,10 @@ int main()
 	std::cout << return5 << std::endl;
 
 	int x; //uninitialized
-	cout << x;
+	//cout << x;
 
-	returnNothing();
+	cout << add(1,2);
 
 	_sleep(2000);
 	return 0;
-}
-
-void returnNothing()
-{
-    std::cout << "Hi" << std::endl;
-    // This function does not return a value so no return statement is needed
 }
